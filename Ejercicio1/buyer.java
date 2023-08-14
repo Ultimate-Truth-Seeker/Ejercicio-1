@@ -1,24 +1,29 @@
 
 // importe de librería random
 import java.util.Random;
-
+/**
+ * Clase que define al comprador
+ * @author Ultimate-Truth-Seeker
+ * @version 13/08/2023
+ */
 public class buyer {
     private Random r = new Random();// objeto random para intento de compra
     private String name;// nombre de comprador
     private String email;// email de comprador
     private int amount;// cantidad de entradas a comprar
     private int balance;// presupuesto para gastar
-    
+    /**
+     * constructor de la clase buyer
+     */
     public buyer(){
         // constructor de objeto
     }
 
-    
+    // getter y setter de nombre
     /** 
      * retorna nombre
      * @return String
      */
-    // getter y setter de nombre
     public String getName() {
         return name;
     }
@@ -31,37 +36,59 @@ public class buyer {
         this.name = name;
     }
 
-    
+    // getter y setter de email
     /** 
      * retorna email
      * @return String
      */
-    // getter y setter de email
     public String getEmail() {
         return email;
     }
-
+    /**
+     * establece email
+     * @param email
+     */
     public void setEmail(String email) {
         this.email = email;
     }
 
     // getter y setter de amount
+    /**
+     * retorna cantidad
+     * @return amount
+     */
     public int getAmount() {
         return amount;
     }
+    /**
+     * establece amount
+     * @param amount
+     */
     public void setAmount(int amount) {
         this.amount = amount;
     }
 
     // getter y setter de balance
+    /**
+     * retorna presupuesto
+     * @return balance
+     */
     public int getBalance() {
         return balance;
     }
+    /**
+     * establece presupuesto
+     * @param balance
+     */
     public void setBalance(int balance) {
         this.balance = balance;
     }
 
-    // Función de intento de compra
+    /** Función de intento de compra, realiza el algoritmo de intento y actualiza las entradas disponibles al comprar.
+    * @param l1 localidad 1
+    * @param l2 localidad 5
+    * @param l3 localidad 10
+    **/
     public void attempt(locality l1, locality l2, locality l3) {
         // Números aleatorios a y b que servirán para validar el ticket
         int a = r.nextInt(1, 15001);
@@ -101,7 +128,7 @@ public class buyer {
                 
             }
         } else {
-            System.out.println("Intento fallido. El ticket no puede comprar boletos.");
+            System.out.println("Intento fallido. El ticket no pudo comprar boletos.");
         }
         
     }
