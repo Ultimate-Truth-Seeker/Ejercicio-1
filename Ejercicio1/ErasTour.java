@@ -1,5 +1,12 @@
+/**
+ * Driver program para ErasTour java, que tiene un menú donde se puede comprar y ver disponibilidad de entradas.
+ * @author Ultimate-Truth-Seeker
+ * @version 14/08/2023
+ * 
+ */
+
 import java.util.Scanner;//Importa scanner para lectura de entrada
-public class ErasTour {
+public class ErasTour {// driver program para el programa
     public static void main(String[] args) {
         boolean menu = true;//Condición del ciclo del menú
         Scanner s = new Scanner(System.in);// scanner para ingreso de entrada

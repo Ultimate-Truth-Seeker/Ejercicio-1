@@ -13,18 +13,34 @@ public class buyer {
         // constructor de objeto
     }
 
+    
+    /** 
+     * retorna nombre
+     * @return String
+     */
     // getter y setter de nombre
     public String getName() {
         return name;
     }
+    
+    /** 
+     * establece nombre
+     * @param name
+     */
     public void setName(String name) {
         this.name = name;
     }
 
+    
+    /** 
+     * retorna email
+     * @return String
+     */
     // getter y setter de email
     public String getEmail() {
         return email;
     }
+
     public void setEmail(String email) {
         this.email = email;
     }

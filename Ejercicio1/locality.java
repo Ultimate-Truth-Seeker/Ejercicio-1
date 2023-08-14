@@ -1,3 +1,4 @@
+
 public class locality {// localidad de la venta de entradas
     private int seats;// asientos disponibles
     private int price;// precio de la entrada
