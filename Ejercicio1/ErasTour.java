@@ -1,7 +1,7 @@
 /**
  * Driver program para ErasTour java, que tiene un menú donde se puede comprar y ver disponibilidad de entradas.
  * @author Ultimate-Truth-Seeker
- * @version 14/08/2023
+ * @version 14/08/2023, creado el 11/08/2023
  * 
  */
 
